@@ -1,25 +1,86 @@
-ul li {
+/*GLOBAL CSS*/
+ul a{
   text-decoration: none;
-}
+  list-style: none;
+  color: black;
+ }
+
+img{
+  max-width:100vh;
+} 
 
 .top-footer{
   width: 100%;
 }
 
-img{
-  max-width:100vh;
+
+
+
+
+/*MAIN*/
+body{
+  display: grid;
+  font-family: 'Libre Franklin';
 }
+
+
+
+
+
 
 
 /*TOP BOTTOM*/
+.footer{
+  display: flex;
+  flex-wrap: wrap;
+  align-items:center;
+  margin-left:10px;
+  margin-right: 10px;
+ border-top: 8px double rgb(224, 220, 220);
+ margin-left:60px;
+ margin-right: 60px;
+}
+
 .top-footer{
   display: flex;
-  justify-content: center;
-  align-items:center;
+  align-items:flex-start;
+  margin-left:10px;
+  margin-right: 10px;
+
 }
+
+.nav-footer{
+  display: flex;
+  justify-content: baseline;
+  align-items:flex-start;
+  gap: 7%;
+  margin-left:-50px;
+}
+
+.footer-sub{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left:9em;
+  border-left: 1px solid grey
+}
+
+.divider{
+  margin: 8px;
+  border-bottom: 1px solid grey
+}
+
+.footer-sub > ul {
+  text-decoration: none;
+  list-style: none;
+}
+
 
 /*BOTTOM FOOTER*/
 .bottom-footer{
+  font-family: 'Libre Franklin';
   display: flex;
   justify-content: center;
   align-items:center;
@@ -33,3 +94,6 @@ img{
   text-decoration: none;
   list-style: none;
 }
+
+
+
