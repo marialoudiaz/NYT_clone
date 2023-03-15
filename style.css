@@ -1,13 +1,15 @@
 /*GLOBAL CSS*/
+img{
+  width: 100%;
+  height:auto;
+
+}
+
 ul, a, li{
   text-decoration: none;
   list-style: none;
   color: black;
  }
-
-img{
-  max-width:100vh;
-} 
 
 .top-footer{
   width: 100%;
@@ -59,19 +61,55 @@ img{
 /*HEADER*/
 header{
   display: flex;
+  flex-wrap: wrap;
   justify-content: baseline;
-  align-items: center;
-  gap: 8%;
+  align-content: space-evenly;
+  align-items:center;
+  gap: 1%;
 }
-header img{
-  width: 70%;
-  margin: 0;
+.headerimg{
+  width: 50%;
+
+}
+
+.date{
+font-size: 12px;
+}
+
+.weather, .weather2{
+display: flex;
+gap: 30px;
+font-size: 12px;
 }
 
 .sun{
   width:10px;
   height: 10px;
 }
+
+.categories{
+  display: flex;
+  justify-content:baseline;
+  align-items:center;
+  margin-left: 80px;
+  margin-right: 80px;
+  border-top: 1.5px solid lightgray;
+  
+}
+
+.categories1, .categories2{
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  font-size: 10px;
+}
+
+.categories2{
+  border-left: 1.5px solid lightgray;
+  padding: 7px;
+}
+
+
 
 /*MAIN*/
 body{
@@ -95,6 +133,7 @@ body{
  border-top: 8px double rgb(224, 220, 220);
  margin-left:60px;
  margin-right: 60px;
+ font-size: 10px;
 }
 
 .top-footer{
@@ -141,10 +180,10 @@ body{
   justify-content: space-around;
   color: grey;
   border-top: 0.5px solid grey;
-  font-size: 0.6em;
   list-style: none;
   padding: 2em;
   margin: 2px;;
+  font-size: 0.5em;
 }
 
 
