@@ -56,6 +56,23 @@ img{
   border: 1px solid #326891
 }
 
+/*HEADER*/
+header{
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  gap: 8%;
+}
+header img{
+  width: 70%;
+  margin: 0;
+}
+
+.sun{
+  width:10px;
+  height: 10px;
+}
+
 /*MAIN*/
 body{
   display: grid;
