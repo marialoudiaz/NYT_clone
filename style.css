@@ -29,24 +29,23 @@ ul, a, li{
 
 /***************************** NAVBAR **************************/
 .top-nav{
-  display: flex;
-  justify-content: space-between;
-  align-items:center;
-  margin-left: 1em;
-  margin-right: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   margin-top: 1em;
 }
 .navicons{
   display: flex;
-  justify-content: flex-start;
+  grid-column: 1;
   align-items: start;
-  gap: 40%;
+  gap: 2%;
 }
 .hamburger, .loupe{
-  width: 30px;
+  width: 20px;
 }
 .langagues{
   display: flex;
+  justify-content:center;
+  grid-column: 2;
   align-items: center;
   gap: 2em;
   font-size: 10px;
@@ -55,6 +54,7 @@ ul, a, li{
   display: flex;
   justify-content: flex-end;
   gap: 1em;
+  grid-column:3;
 }
 .login-buttons a{
   color: white;
@@ -152,8 +152,6 @@ p{
   grid-template-columns: repeat(8, 1fr);
   grid-column-gap: 1em;
   margin-top: 1em;
-  margin-left: 1em;
-  margin-right: 1em;
 }
 
 .left{
@@ -204,18 +202,14 @@ gap: 0.5em;
 
 /***************************** RIGHT COLUMN **************************/
 .right{
-  display: grid;
-  grid-template-columns: 1fr;;
   grid-column-end: span 3;
   border-left: 1px solid lightgrey;
-  padding-left:2%;
-  
 }
 
 .right-col{
   display: flex;
   flex-direction: column;
-  margin-left: 3em;
+  margin-left: 1em;
 }
 
 .Rightbox1{
@@ -239,6 +233,11 @@ gap: 0.5em;
 
 .op{
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid lightgrey;
 }
 
 .op img{
@@ -249,6 +248,8 @@ gap: 0.5em;
 .faces{
   display: flex;
   flex-direction: column;
+  gap: 0.5em;
+
 }
 
 .rb2{
