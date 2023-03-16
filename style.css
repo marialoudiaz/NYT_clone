@@ -169,7 +169,7 @@ p{
 /***************************** FIRST BLOC OF LEFT COLUMN **************************/
 .left-col1, .left-col2, .left-col3{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   margin-bottom: 3em;
   border-bottom: 2px solid rgb(53, 50, 50);
   padding-bottom: 1em;
@@ -178,19 +178,22 @@ p{
 .one{
 display: flex;
 flex-direction: column;
-gap: 1em;
+
+gap: 0.5em;
 }
 
 .two{
   display: flex;
   flex-wrap: wrap;
   justify-content: end;
-  gap: 1em;
+  gap: 0.5em;
+  margin-left: 2em;
+ grid-column-end: span 2;
 }
 
 
 .divider{
-  border-bottom: 2px solid grey;
+  border-bottom: 1px solid grey;
 }
 
 /***************************** RIGHT COLUMN **************************/
@@ -258,7 +261,7 @@ gap: 1em;
   border-left: 1px solid grey;
 }
 
-.divider{
+.divider-footer{
   margin: 8px;
   border-bottom: 1px solid grey
 }
