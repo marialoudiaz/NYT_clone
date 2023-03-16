@@ -154,7 +154,6 @@ p{
 .main-col3{
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 1fr);
   grid-column-gap: 1em;
   margin-top: 1em;
   margin-left: 1em;
@@ -242,6 +241,19 @@ gap: 0.5em;
   padding-left:0.5em
 }
 
+.op{
+  display: flex;
+}
+
+.op img{
+  width: 40px;
+  float: right;
+}
+
+.faces{
+  display: flex;
+  flex-direction: column;
+}
 
 .rb2{
   border-left: 1px solid lightgray;
