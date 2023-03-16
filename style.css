@@ -1,4 +1,10 @@
 /*GLOBAL CSS*/
+* {
+  box-sizing : border-box;
+  margin:0;
+  padding: 0;
+}
+
 img{
   width: 100%;
   height:auto;
@@ -15,14 +21,20 @@ ul, a, li{
   width: 100%;
 }
 
-/*navbar*/
+.wrapper{
+  width: 90%;
+  margin: auto; 
+
+}
+
+/***************************** NAVBAR **************************/
 .top-nav{
   display: flex;
-  justify-content:baseline;
+  justify-content:space-around;
   align-items:center;
+  margin-top: 20px;
   margin-left: 60px;;
   margin-right: 60px;
-  
 }
 
 .navicons{
@@ -58,18 +70,16 @@ ul, a, li{
   border: 1px solid #326891
 }
 
-/*HEADER*/
+/***************************** HEADER **************************/
 header{
   display: flex;
   flex-wrap: wrap;
-  justify-content: baseline;
-  align-content: space-evenly;
+  justify-content: space-around;
   align-items:center;
-  gap: 1%;
 }
+
 .headerimg{
   width: 50%;
-
 }
 
 .date{
@@ -78,13 +88,17 @@ font-size: 12px;
 
 .weather, .weather2{
 display: flex;
+justify-content:space-around;
+align-items: center;
 gap: 30px;
+padding: 10px;
 font-size: 12px;
 }
 
 .sun{
   width:10px;
   height: 10px;
+  align-self:baseline;
 }
 
 .categories{
@@ -111,19 +125,32 @@ font-size: 12px;
 
 
 
-/*MAIN*/
+/***************************** MAIN **************************/
 body{
-  display: grid;
   font-family: 'Libre Franklin';
 }
 
+.main-col3{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.left{
+  grid-column-end: 1/4;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.right-col{
+  grid-column-end: 4/7;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: end;
+
+}
 
 
-
-
-
-
-/*TOP BOTTOM*/
+/***************************** FOOTER **************************/
 .footer{
   display: flex;
   flex-wrap: wrap;
@@ -173,7 +200,7 @@ body{
 }
 
 
-/*BOTTOM FOOTER*/
+/***************************** BOTTOM FOOTER **************************/
 .nav-links{
   font-family: 'Libre Franklin';
   display: flex;
