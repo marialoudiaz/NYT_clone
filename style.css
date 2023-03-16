@@ -160,6 +160,7 @@ p{
 
 .left{
   display: flex;
+  justify-content: flex-start;
   flex-direction: column;
   grid-column-end: span 5;
 }
@@ -168,14 +169,22 @@ p{
 .left-col1, .left-col2, .left-col3{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  margin: 3em;
+  margin-bottom: 3em;
+  border-bottom: 2px solid rgb(53, 50, 50);
+  padding-bottom: 1em;
 }
 
 .one{
 display: flex;
 flex-direction: column;
 gap: 1em;
+}
+
+.two{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  gap: 0.5em;
 }
 
 /***************************** RIGHT COLUMN **************************/
