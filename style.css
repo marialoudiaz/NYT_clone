@@ -72,7 +72,7 @@ ul, a, li{
 header{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items:center;
 }
 
@@ -108,26 +108,22 @@ font-size: 12px;
 
 .categories{
   display: flex;
-  justify-content:baseline;
-  align-items:center;
-  margin-left: 80px;
-  margin-right: 80px;
-  border-top: 1.5px solid lightgray;
-  border-bottom: 3px double black
-  
-}
-.categories1, .categories2{
-  display: flex;
+  justify-content:space-between;
   align-items: center;
-  gap: 2em;
+  border-top: 1.5px solid lightgray;
+  border-bottom: 3px double black;
+  gap: 1em;
   font-size: 10px;
+  padding: 10px;
+  margin: 0.5em;
   
 }
-.categories2{
+.cooking{
   border-left: 1.5px solid lightgray;
-  padding: 7px;
-  margin: 0.5em;
+  padding-left:0.5em;
 }
+  
+
 
 
 
@@ -271,40 +267,29 @@ gap: 0.5em;
 /***************************** FOOTER **************************/
 .footer{
   display: flex;
-  flex-wrap: wrap;
   align-items:center;
-  margin-left:10px;
-  margin-right: 10px;
- border-top: 8px double rgb(224, 220, 220);
- margin-left:60px;
- margin-right: 60px;
- font-size: 10px;
+  border-top: 8px double rgb(224, 220, 220);
+  font-size: 10px;
+}
+nav{
+  display: flex;
 }
 
-.top-footer{
+.topnav{
   display: flex;
-  align-items:flex-start;
-  margin-left:10px;
-  margin-right: 10px;
-
+  justify-content: space-between;
+  font-size: 12px;
+  margin-top: 1em;
 }
 
-.nav-footer{
+.more{
   display: flex;
-  justify-content: baseline;
-  align-items:flex-start;
-  gap: 7%;
-  margin-left:-50px;
 }
 
-.footer-sub{
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  flex-direction: column;
-  margin-left:9em;
-  border-left: 1px solid grey;
+.separator{
+  border-left: 1px solid lightslategrey;
+  padding-left: 1em;
+  margin: 0 2em;
 }
 
 .divider-footer{
@@ -312,22 +297,16 @@ gap: 0.5em;
   border-bottom: 1px solid grey
 }
 
-.footer-sub > ul {
-  text-decoration: none;
-  list-style: none;
-}
-
-
 /***************************** BOTTOM FOOTER **************************/
-.nav-links{
+.navLinks{
   font-family: 'Libre Franklin';
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   color: grey;
   border-top: 0.5px solid grey;
-  list-style: none;
   padding: 2em;
-  margin: 2px;;
+  margin: 2px;
+  margin-top: 2em;
   font-size: 0.5em;
 }
 
