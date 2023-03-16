@@ -137,17 +137,34 @@ body{
 }
 
 .left{
-  grid-column-end: 1/4;
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: column;
 }
-.right-col{
-  grid-column-end: 4/7;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: end;
 
+/***************************** FIRST BLOC OF LEFT COLUMN **************************/
+.left-col1{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
+
+.one{
+display: flex;
+flex-direction: column;
+}
+
+/***************************** RIGHT COLUMN **************************/
+.right{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(10, 1fr);
+}
+
+.right-col{
+  display: flex;
+  flex-direction: column;
+}
+
 
 
 /***************************** FOOTER **************************/
