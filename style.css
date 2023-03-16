@@ -129,16 +129,33 @@ font-size: 12px;
 body{
   font-family: 'Libre Franklin';
 }
+h1{
+  font-size: 18px;
+}
+
+h2{
+  font-size: 17px;
+}
+
+h3{
+  font-size: 15px;
+}
+
+p{
+  font-size: 8px;
+}
 
 .main-col3{
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 2em;
 }
 
 .left{
   display: flex;
   flex-direction: column;
+  grid-column-end: span 5;
 }
 
 /***************************** FIRST BLOC OF LEFT COLUMN **************************/
@@ -151,13 +168,16 @@ body{
 .one{
 display: flex;
 flex-direction: column;
+gap: 1em;
 }
 
 /***************************** RIGHT COLUMN **************************/
 .right{
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(10, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-end: span 2;
+  
 }
 
 .right-col{
@@ -165,6 +185,12 @@ flex-direction: column;
   flex-direction: column;
 }
 
+.names{
+  font-size: 10px;
+}
+.opinion-titles{
+  font-size: 14px;
+}
 
 
 /***************************** FOOTER **************************/
