@@ -125,8 +125,7 @@ font-size: 12px;
 .categories2{
   border-left: 1.5px solid lightgray;
   padding: 7px;
-  margin: 0.5em
-  
+  margin: 0.5em;
 }
 
 
@@ -140,7 +139,7 @@ h1{
 }
 
 h2{
-  font-size: 17px;
+  font-size: 14px;
 }
 
 h3{
@@ -155,12 +154,14 @@ p{
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
-  grid-column-gap: 2em;
+  grid-column-gap: 1em;
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 .left{
   display: flex;
-  justify-content: flex-start;
   flex-direction: column;
   grid-column-end: span 5;
 }
@@ -184,14 +185,18 @@ gap: 1em;
   display: flex;
   flex-wrap: wrap;
   justify-content: end;
-  gap: 0.5em;
+  gap: 1em;
+}
+
+
+.divider{
+  border-bottom: 2px solid grey;
 }
 
 /***************************** RIGHT COLUMN **************************/
 .right{
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 1fr;;
   grid-column-end: span 3;
   
 }
